@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Credit Card Validator</title>
+</head>
+<body>
+    <header>
+        <h1>💳 Credit Card Validator 💳</h1>
+        <p>Follow these steps to validate a credit card number of your choice. Note that banned countries are not displayed. To change a country's ban status, click on <em>"Edit banned countries"</em> or <a href="https://bit.ly/36TJca1" target="_blank">contact your administrator.</a></p>
+    </header>
+
+    <hr>
+
+    <form id="details" onsubmit="return acceptCard()">
+        <label class="title">1️⃣ Select country from list</label>
+        <select id="selectCountry">
+            <option>Choose your country</option>
+        </select>
+
+        <br><br>
+
+        <div>
+            <label class="title">2️⃣ Choose card type:</label>
+            <input type="radio" id="mastercard" onchange="mastercardfunc()">
+            <label for="mastercard">Mastercard</label>
+            <input type="radio" id="amex" onchange="amexfunc()">
+            <label for="mastercard">American Express</label>
+            <input type="radio" id="visa" onchange="visafunc()">
+            <label for="mastercard">Visa</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label class="title">3️⃣ Credit card number:</label>
+            <input type="text" placeholder="Enter card number here..." id="cardNum">
+        </div>
+
+        <input class="submit" type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>Other options:</h3>
+    <button id="bannedbox">Edit banned countries</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span id="close">&times;</span>
+          <h2>Edit banned countries</h2>
+          <h3>Current list of banned countries</h3>
+          <div id="bannedcountries"></div>
+          <h3>Change a country's status</h3>
+          <select id="banacountry" onchange="bancountry()">
+            <option id="bandrop">Add a banned country</option>
+        </select>
+        <select id="unbanacountry" onchange="unbancountry()">
+            <option>Remove a banned country</option>
+        </select>
+        </div>
+    </div>
+
+    <button id="creditbox">View entered credit cards</button>
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+          <span id="close2">&times;</span>
+          <h2>List of entered credit cards</h2>
+          <div id="credlist"></div>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
