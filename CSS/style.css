@@ -1,0 +1,115 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+    background-color: grey;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button */
+    #close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+    
+    #close:hover,
+    #close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    /* The Close Button */
+    #close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+    
+    #close2:hover,
+    #close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
+    
+    
+    .modal-content h5{
+        font-size: 19px;
+    }
+    
+    .modal-content p{
+        font-size: 16px;
+    }
+    
+    .datetext{
+        font-style: oblique;
+        font-size: 14px;
+        color: #888;
+    }
+    
+    .modal-content h2{
+        text-align: center;
+        color: rgb(64, 189, 206);
+    }
+
+
+    body{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        background-color: rgb(85, 82, 82);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1{
+        color: rgb(0, 255, 0);
+    }
+
+    .title{
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 5%;
+        color: rgb(0, 255, 0);
+    }
+
+    em{
+        color: rgb(77, 111, 223);
+    }
+
+    a{
+        color: wheat;
+    }
+
+    button{
+        color: black;
+        background-color: rgb(77, 111, 223);
+        padding: 1%;
+        margin: 1%;
+    }
+
+    .submit{
+        background-color: rgb(77, 223, 77);
+        color: black;
+        padding: 2%;
+        margin: 1%;
+        margin-top: 2%;
+    }
